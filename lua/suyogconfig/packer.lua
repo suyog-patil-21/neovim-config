@@ -1,3 +1,4 @@
+-- AFTER :PackerSync run :lua ColorMyPencils() for configuring the theme.
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
@@ -60,6 +61,9 @@ return require('packer').startup(function(use)
             'stevearc/dressing.nvim', -- optional for vim.ui.select
         },
     }
+
+    -- multiline cursor like visual studio code
+    use 'mg979/vim-visual-multi'
 end)
 
 
