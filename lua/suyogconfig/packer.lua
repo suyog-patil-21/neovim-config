@@ -97,4 +97,7 @@ return require('packer').startup(function(use)
         end
     }
     use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use {
+        "Everduin94/nvim-quick-switcher",
+    }
 end)
