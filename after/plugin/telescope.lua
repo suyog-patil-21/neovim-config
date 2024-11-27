@@ -10,3 +10,4 @@ vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
 
 vim.keymap.set('n', '<leader>gr', builtin.lsp_references, {});
 vim.keymap.set('n', '<C-a>s', builtin.lsp_document_symbols, {});
+vim.keymap.set('n', '<leader>we', builtin.diagnostics, {});
