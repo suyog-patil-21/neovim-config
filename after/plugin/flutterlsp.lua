@@ -1,4 +1,14 @@
-require("flutter-tools").setup {} -- use defaults
+require("flutter-tools").setup {
+  dev_log = {
+    enabled = true,
+    filter = nil, -- optional callback to filter the log
+    -- takes a log_line as string argument; returns a boolean or nil;
+    -- the log_line is only added to the output if the function returns true
+    notify_errors = true, -- if there is an error whilst running then notify the user
+    open_cmd = "15split", -- command to use to open the log buffer
+    focus_on_open = true, -- focus on the newly opened log window
+  },
+} -- use defaults
 
 vim.keymap.set("n", "<leader>fr", "<cmd>FlutterRun<cr>", { desc = "Flutter Run" })
 vim.keymap.set("n", "<leader>fq", "<cmd>FlutterQuit<cr>", { desc = "Flutter Quit" })
