@@ -3,7 +3,7 @@
 ### Required Dependences
 Download and install 
 1. [packer.nvim](https://github.com/wbthomason/packer.nvim).
-2. [ripgreo](https://github.com/BurntSushi/ripgrep)
+2. [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ### Requires
 Download [Neovim](https://neovim.io/)
